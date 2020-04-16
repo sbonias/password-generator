@@ -56,6 +56,16 @@ var generatePassword = function () {
   //confirm for specialChar to yield "true or false" result
   var specialChar = confirm("Would you like your new password to contain special characters? (ex. !, @, #, $) OK = Yes | Cancel = No");
   console.log(specialChar)
+
+  //created a while loop to force the user to select at least 1 of the criteria
+  //false doesn't require a parenthesis because it's a boolean
+  while (lowerCase === false && upperCase === false && numValues === false && specialChar === false) {
+    alert("At least one of the four sets of criteria must be selected");
+    var lowerCase = confirm("Would you like your new password to contain lower case letters? OK = Yes | Cancel = No");
+    var upperCase = confirm("Would you like your new password to contain UPPER case letters? OK = Yes | Cancel = No");
+    var numValues = confirm("Would you like your new password to contain numeric values? OK = Yes | Cancel = No");
+    var specialChar = confirm("Would you like your new password to contain special characters? (ex. !, @, #, $) OK = Yes | Cancel = No");
+  }
 }
 
 
