@@ -36,6 +36,45 @@ The following image demonstrates the application functionality:
 
 ![password generator demo](./Assets/03-javascript-homework-demo.png)
 
+## Pseudocode
+
+When button is clicked
+    -Create Button Prompt and/or functionality to initiate code
+    
+Prompt user to enter length of pw
+    -"In order to generate a password, please choose a character length between 8 - 128."
+        -Write code to limit characters allowed to be between 8-128
+            -If characters entered is between 8-128 continue to next prompt
+            -If characters entered is < 8 create alert that tells user "Character length needs to be Greater than 8 characters"
+            -If characters entered is > 128 create alert that tells user "Character length needs to be less than 128 characters"
+
+Prompt user via a "confirm" to determine if lower case letters are required for their new password
+    -"Would you like your new password to contain lower case letters?"
+            -If user selects "OK" run code to assign a random lower case letter (that will be stored and called upon at a later time)
+            -If user selects "Cancel" omit generating a random lower case letter
+
+Prompt user via a "confirm" to determine if UPPER case letters are required for their new password
+            -If user selects "OK" run code to assign a random UPPER case letter (that will be stored and called upon at a later time)
+            -If user selects "Cancel" omit generating a random UPPER case letter
+
+Prompt user via a "confirm" to determine if numeric values are required for their new password
+            -If user selects "OK" run code to assign a random numeric value (that will be stored and called upon at a later time)
+            -If user selects "Cancel" omit generating a random numeric value
+
+Prompt user via a "confirm" to determine if special characters are required for their new password
+            -If user selects "OK" run code to assign a random special character (that will be stored and called upon at a later time)
+            -If user selects "Cancel" omit generating a random special character
+
+Validate that at least 1 of 4 prior options was confirmed
+
+When all prompts are completed
+    -Display new password in box
+        -Call above functions?
+
+If no prompts were confirmed or selected
+    -Inform user via "alert" that not enough criteria was selected for a password to generate and to click "Generate Password" button to start the process again
+
+
 ## Review
 
 You are required to submit the following for review:
