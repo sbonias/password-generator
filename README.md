@@ -37,7 +37,7 @@ The following image demonstrates the application functionality:
 ![password generator demo](./Assets/03-javascript-homework-demo.png)
 
 ## Pseudocode
-
+```
 When button is clicked
     -Create Button Prompt and/or functionality to initiate code
     
@@ -54,14 +54,17 @@ Prompt user via a "confirm" to determine if lower case letters are required for 
             -If user selects "Cancel" omit generating a random lower case letter
 
 Prompt user via a "confirm" to determine if UPPER case letters are required for their new password
+    -"Would you like your new password to contain UPPER case letters?"
             -If user selects "OK" run code to assign a random UPPER case letter (that will be stored and called upon at a later time)
             -If user selects "Cancel" omit generating a random UPPER case letter
 
 Prompt user via a "confirm" to determine if numeric values are required for their new password
+    -"Would you like your new password to contain numeric values?"
             -If user selects "OK" run code to assign a random numeric value (that will be stored and called upon at a later time)
             -If user selects "Cancel" omit generating a random numeric value
 
 Prompt user via a "confirm" to determine if special characters are required for their new password
+    -"Would you like your new password to contain special characters? (ex. !, @, #, $)"
             -If user selects "OK" run code to assign a random special character (that will be stored and called upon at a later time)
             -If user selects "Cancel" omit generating a random special character
 
@@ -73,7 +76,7 @@ When all prompts are completed
 
 If no prompts were confirmed or selected
     -Inform user via "alert" that not enough criteria was selected for a password to generate and to click "Generate Password" button to start the process again
-
+```
 
 ## Review
 
