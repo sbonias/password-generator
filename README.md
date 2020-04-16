@@ -42,7 +42,7 @@ When button is clicked
     -Create Button Prompt and/or functionality to initiate code
     
 Prompt user to enter length of pw
-    -"In order to generate a password, please choose a character length between 8 - 128."
+    -"In order to generate a password, please choose a character length between 8 - 128." (Prompt)
         -Write code to limit characters allowed to be between 8-128
             -If characters entered is between 8-128 continue to next prompt
             -If characters entered is < 8 create alert that tells user "Character length needs to be Greater than 8 characters"
