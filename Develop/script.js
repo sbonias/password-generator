@@ -66,6 +66,25 @@ var generatePassword = function () {
     var numValues = confirm("Would you like your new password to contain numeric values? OK = Yes | Cancel = No");
     var specialChar = confirm("Would you like your new password to contain special characters? (ex. !, @, #, $) OK = Yes | Cancel = No");
   }
+
+  //create a new variable + IF Stmt to randomly apply a value from the variables corresponding array based on user input
+  //use "Math.floor(Math.random()" formula for random generation
+  if (lowerCase === true) {
+    let randomLowerCase = arrLowerCase[Math.floor(Math.random() * arrLowerCase.length)];
+    console.log(randomLowerCase);
+  }
+  if (upperCase === true) {
+    let randomUpperCase = arrUpperCase[Math.floor(Math.random() * arrUpperCase.length)];
+    console.log(randomUpperCase);
+  }
+  if (numValues === true) {
+    let randomNumValues = arrNumValues[Math.floor(Math.random() * arrNumValues.length)];
+    console.log(randomNumValues);
+  }
+  if (specialChar === true) {
+    let randomSpecialChar = arrSpecialChar[Math.floor(Math.random() * arrSpecialChar.length)];
+    console.log(randomSpecialChar);
+  }
 }
 
 
