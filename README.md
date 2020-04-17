@@ -68,11 +68,14 @@ Prompt user via a "confirm" to determine if special characters are required for 
             -If user selects "OK" run code to assign a random special character (that will be stored and called upon at a later time)
             -If user selects "Cancel" omit generating a random special character
 
-Validate that at least 1 of 4 prior options was confirmed
+Validate that at least 1 of 4 prior options was selected
 
-When all prompts are completed
+When all prompts have been finalized randomly generate characters by pulling from your corresponding arrays
+    -Use math.floor function
+
+When randomization of password is complete post it to web browser's text box
     -Display new password in box
-        -Call above functions?
+        -Call functions
 
 If no prompts were confirmed or selected
     -Inform user via "alert" that not enough criteria was selected for a password to generate and to click "Generate Password" button to start the process again
