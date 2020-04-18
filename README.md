@@ -85,9 +85,24 @@ If no prompts were confirmed or selected
 
 You are required to submit the following for review:
 
-* The URL of the deployed application.
+* The URL of the deployed application: https://sbonias.github.io/password-generator/
 
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
+* The URL of the GitHub repository: https://github.com/sbonias/password-generator
+
+* Give the repository a unique name and include a README describing the project.
+
+## Issues
+
+When I completed my coding for this password generator, I realized that when selecting the "Generate Password" button it works on the initial pass. However, when clicking the button a second time the application fails due to an error. The page needs to be refreshed before you can proceed with the password generation process. The error that pops up via the console is outlined below. More research is needed to correct this issue.
+    
+Error Message:
+    Uncaught TypeError: arrPrelimPassword.push is not a function
+        at generatePassword (script.js:85)
+        at HTMLButtonElement.writePassword (script.js.9)
+
+## Instructions 
+
+User will need to refresh the page before clicking "Generate Password" button for output to display
 
 - - -
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
